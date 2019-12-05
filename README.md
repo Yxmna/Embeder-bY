@@ -11,5 +11,5 @@ Launch:
 npm start
 ```
 
-or download .exe:
+or download .exe
 [here](http://yomna.yn.fr/tool/Embeder_bY_beta1.zip)
