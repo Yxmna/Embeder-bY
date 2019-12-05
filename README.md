@@ -9,9 +9,10 @@ It works with your own bot without the need to code anything
  
 #### Install & run with code source
 
-- Download files
-- Type `npm i`
-- Type `npm start`
+- `git clone https://github.com/Yxmna/Embeder-bY.git`
+- `cd Embeder-bY`
+- `npm i`
+- `npm start`
 
 #### Install & run with executable
 
