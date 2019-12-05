@@ -5,12 +5,16 @@
   "description": "tool that allows you to easily create and send embed for discord",
   "main": "mains.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "build": "electron-packager . --overwrite --icon=files/icon.ico"
   },
   "author": "Yomna <yomna@netc.fr>",
   "license": "GPL-3.0",
   "dependencies": {
     "discord.js": "^11.5.1",
     "electron": "^7.1.2"
+  },
+  "devDependencies": {
+    "electron-packager": "^14.1.1"
   }
 }
