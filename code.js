@@ -32,6 +32,7 @@ const default_footer = "Embeder by Yomna";
 const default_footer_img = "https://media.discordapp.net/attachments/651877464234131476/651877503794937879/icon_tiny.png";
 const default_date = "";
 const default_color = "#00b16a";
+const default_avatar = "https://media.discordapp.net/attachments/592132872316518400/652125384694956032/default_avatar.png";
 
 function load() {
   reset();
@@ -54,7 +55,7 @@ function login() {
 
   bot.login(tk).catch((err) => {
     errLogin();
-});
+  });
   console.log(`Logging..`);
   return t = setInterval("logging()", 500);
 
@@ -286,7 +287,11 @@ function update_client() {
     guild_selected = bot.guilds.get(document.getElementById("guilds").value);
     channel_selected = bot.channels.get(document.getElementById("channels").value);
     document.getElementById("bot_name").innerHTML = bot.user.username;
-    document.getElementById("bot_avatar").src = bot.user.avatarURL;
+    if (bot.user.avatarURL == "") {
+      document.getElementById("bot_avatar").src = default_avatar;
+    } else {
+      document.getElementById("bot_avatar").src = bot.user.avatarURL;
+    }
     document.getElementById("discriminator").innerHTML = bot.user.discriminator;
     document.getElementById("servers").innerHTML = bot.guilds.size;
     if (bot.guilds.size > 1) {
