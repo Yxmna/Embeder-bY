@@ -1,0 +1,16 @@
+{
+  "name": "embeder_by",
+  "productname": "Embeder by Yomna",
+  "version": "0.1.0",
+  "description": "tool that allows you to easily create and send embed for discord",
+  "main": "mains.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "Yomna <yomna@netc.fr>",
+  "license": "GPL-3.0",
+  "dependencies": {
+    "discord.js": "^11.5.1",
+    "electron": "^7.1.2"
+  }
+}

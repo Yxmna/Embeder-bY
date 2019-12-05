@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="design.css">
+  <script type="text/javascript" src="code.js">
+  </script>
+  <title>Embeder by Yomna</title>
+</head>
+
+<body onload="load();">
+
+
+
+  <div id="setup">
+
+
+    <div class="box">
+      <div class="line">
+        <input type="text" onclick="this.select();" id="id">
+        <a href="#" onclick="invite()">Invite</a>
+      </div>
+      <div class="line">
+        <h2 class="stage">#1 put ID bot and invite on your server</h2>
+      </div>
+    </div>
+
+    <div class="box">
+      <div class="line">
+        <input type="text" onclick="this.select();" id="token">
+        <a href="#" onclick="login();" id="login">Login</a>
+      </div>
+      <div class="line">
+        <h2 class="stage">#2 put TOKEN bot and login</h2>
+      </div>
+    </div>
+
+    <div class="box latest_box">
+      <img src="https://media.discordapp.net/attachments/651877464234131476/651878654736990249/offline.png" id="bot_avatar">
+      <div class="line">
+        <h1 class="info_bot" id="bot_name">OFFLINE</h1>
+        <h2 class="stage split">#</h2>
+        <h2 class="stage" id="discriminator">0000</h2>
+      </div>
+      <div class="line">
+        <h1 class="info_bot" id="s">SERVER:</h1>
+        <h2 class="stage split" id="servers">0</h2>
+      </div>
+    </div>
+
+
+  </div>
+
+  <div class="top">
+
+    <h2 class="stage">#3 edit your embed</h2>
+
+    <h2 class="stage">#4 view the result</h2>
+  </div>
+
+
+  <div id="edit">
+
+
+
+
+    <div id="left">
+
+
+
+
+
+      <div class="embed">
+
+        <div class="line">
+          <div class="block-5">
+            <h3>author</h3>
+            <textarea name="author" rows="8" cols="80" id="author_input"></textarea>
+          </div>
+          <div class="block-5">
+            <h3>author picture/link</h3>
+            <input type="text" onclick="this.select();" value="" id="author_img_input">
+            <input type="text" onclick="this.select();" value="" id="author_link_input">
+          </div>
+        </div>
+
+        <div class="line">
+          <div class="block-5">
+            <h3>title</h3>
+            <textarea name="title" rows="8" cols="80" id="title_input"></textarea>
+          </div>
+          <div class="block-5">
+            <h3>title link</h3>
+            <input type="text" onclick="this.select();" id="title_link_input">
+          </div>
+        </div>
+
+        <div class="line">
+          <div class="block-1">
+            <h3>description</h3>
+            <textarea rows="8" cols="80" id="description_input"></textarea>
+          </div>
+        </div>
+
+        <div class="line">
+          <div class="block-5" id="fields1">
+            <h3>fields</h3>
+            <div class="field">
+              <div class="block-5">
+                <textarea id="field_title0" rows="8" cols="80"></textarea>
+              </div>
+              <div class="block-5">
+                <textarea id="field_value0" rows="8" cols="80"></textarea>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="line">
+          <div class="block-1">
+            <a href="#" onclick="createField();">add field</a>
+          </div>
+        </div>
+
+        <div class="line">
+          <div class="block-1">
+            <h3>background_image</h3>
+            <input type="text" onclick="this.select();" value="" id="background_input">
+          </div>
+        </div>
+
+        <div class="line">
+          <div class="block-1">
+            <h3>thumbnail_image</h3>
+            <input type="text" onclick="this.select();" value="" id="thumbnail_input">
+          </div>
+        </div>
+
+        <div class="line">
+          <div class="block-5">
+            <h3>footer</h3>
+            <textarea name="author" rows="8" cols="80" id="footer_input"></textarea>
+          </div>
+          <div class="block-5">
+            <h3>footer picture/date</h3>
+            <input type="text" onclick="this.select();" value="" id="footer_img_input">
+            <input type="date" name="" value="" id="date_input">
+          </div>
+        </div>
+
+      </div>
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+    <div id="right">
+
+
+      <div class="embed active_background active_thumbnail" id="embed">
+
+
+        <div id="content">
+
+          <div id="author">
+            <img src="" id="author_img_u">
+            <h2 id="author_u"></h2>
+          </div>
+
+          <div id="title">
+            <h1 id="title_u"></h1>
+          </div>
+
+          <div id="description">
+            <h2 id="description_u"></h2>
+          </div>
+
+          <div id="fields2">
+
+            <div class="field">
+              <h1></h1>
+              <h2></h1>
+            </div>
+
+          </div>
+
+
+          <div id="background_div">
+            <img src="" id="background_u">
+          </div>
+
+
+
+          <div id="footer">
+            <img src="" id="footer_img_u">
+            <h3 id="footer_u"></h3>
+            <h3 class="split" id="dot">•</h3>
+            <h3 id="date_u"></h3>
+          </div>
+
+
+
+
+
+        </div>
+
+
+
+        <div id="thumbnail">
+          <img src="" id="thumbnail_u">
+        </div>
+
+
+
+
+
+      </div>
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+    <div id="send">
+
+      <div class="box">
+
+        <div class="line">
+          <a href="#" onclick="location.reload().then(m => {reset()});" id="reset">RESET</a>
+
+          <div id="color_div">
+            <input onchange="update_client()" type="color" id="color" onchange="update_client()">
+          </div>
+
+        </div>
+
+        <div class="line">
+          <h2 class="help">Click </h2><a href="#" class="help"> here </a>
+          <h2 class="help">to watch tuto</h2>
+        </div>
+
+      </div>
+
+
+      <div class="box">
+
+        <div class="line">
+          <h2 class="stage">#5 choose your server</h2>
+
+          <div class="select_div">
+            <select id="guilds" onchange="update_channels()">
+            </select>
+          </div>
+
+
+        </div>
+
+        <div class="line">
+          <h2 class="stage">#6 choose your channel</h2>
+
+          <div class="select_div" id="channel">
+            <select id="channels">
+            </select>
+          </div>
+
+
+        </div>
+      </div>
+
+      <div class="box latest_box">
+
+        <div class="line">
+
+
+          <a href="#" onclick="send();">#7 send your embed!</a>
+
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+  </div>
+
+
+
+
+
+</body>
+
+</html>
