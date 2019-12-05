@@ -287,7 +287,7 @@ function update_client() {
     guild_selected = bot.guilds.get(document.getElementById("guilds").value);
     channel_selected = bot.channels.get(document.getElementById("channels").value);
     document.getElementById("bot_name").innerHTML = bot.user.username;
-    if (bot.user.avatarURL == "") {
+    if (bot.user.avatarURL === null) {
       document.getElementById("bot_avatar").src = default_avatar;
     } else {
       document.getElementById("bot_avatar").src = bot.user.avatarURL;
