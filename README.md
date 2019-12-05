@@ -12,4 +12,4 @@ npm start
 ```
 
 or download .exe
-[here](http://yomna.yn.fr/tool/Embeder_bY_beta1.zip)
+[here](http://yomna.yn.fr/tool/embeder_by_beta1.zip)
