@@ -1,6 +1,5 @@
 ## ![](https://media.discordapp.net/attachments/651877464234131476/651877501961895956/icon.png?width=20&height=20) WELCOME TO YOU
 
-![](https://media.discordapp.net/attachments/651877464234131476/651877501961895956/icon.png?width=16&height=16) 
 ##### Embeder | Presentation
 
 Embeder is a visual tool that allows you to easily create and send embed for Discord.
