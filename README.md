@@ -6,3 +6,6 @@ npm i
 
 Launch:
 npm start
+
+or download .exe:
+http://yomna.yn.fr/tool/Embeder_bY_beta1.zip
