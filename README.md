@@ -1,6 +1,6 @@
 ## WELCOME TO YOU
 
-![](https://media.discordapp.net/attachments/651877464234131476/651877501961895956/icon.png?width=25&height=25) `Embeder | Presentation` 
+![](https://media.discordapp.net/attachments/651877464234131476/651877501961895956/icon.png?width=25&height=25) Embeder | Presentation
 
 Embeder is a visual tool that allows you to easily create and send embed for Discord.
 It works with your own bot without the need to code anything
