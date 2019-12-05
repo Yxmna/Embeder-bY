@@ -95,7 +95,7 @@ bot.on("ready", () => {
   online = true;
   update_client();
   update_guilds();
-  bot.user.setActivity("bot girl", {
+  bot.user.setActivity("the skies", {
     type: "WATCHING"
   });
 });
