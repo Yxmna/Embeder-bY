@@ -10,7 +10,7 @@ It works with your own bot without the need to code anything
 #### Install & run with code source
 
 - Download files
-- Type `npm init`
+- Type `npm i`
 - Type `npm start`
 
 #### Install & run with executable
