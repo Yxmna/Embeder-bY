@@ -19,7 +19,7 @@ var log = 0;
 var online = false;
 
 const default_author = "Yomna";
-const default_author_img = "https://media.discordapp.net/attachments/651877464234131476/651877503794937879/icon_tiny.png";
+const default_author_img = "https://media.discordapp.net/attachments/651877464234131476/652206943661981727/icon_tiny.png";
 const default_author_link = "";
 const default_title = "EMBEDER TITLE";
 const default_title_link = "https://github.com/Yxmna";
@@ -27,12 +27,12 @@ const default_description = "Here, the description. you can use the discord mark
 const default_field_title = "a field title";
 const default_field_value = "a field value";
 const default_background = "";
-const default_thumbnail = "https://media.discordapp.net/attachments/651877464234131476/651877501961895956/icon.png";
+const default_thumbnail = "https://media.discordapp.net/attachments/651877464234131476/652206942080598018/icon.png";
 const default_footer = "Embeder by Yomna";
-const default_footer_img = "https://media.discordapp.net/attachments/651877464234131476/651877503794937879/icon_tiny.png";
+const default_footer_img = "https://media.discordapp.net/attachments/651877464234131476/652206943661981727/icon_tiny.png";
 const default_date = "";
 const default_color = "#00b16a";
-const default_avatar = "https://media.discordapp.net/attachments/592132872316518400/652125384694956032/default_avatar.png";
+const default_avatar = "https://media.discordapp.net/attachments/651877464234131476/652208071489224715/default_avatar.png";
 
 function load() {
   reset();
