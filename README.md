@@ -1,3 +1,5 @@
+![](https://media.discordapp.net/attachments/651877464234131476/652300083760726026/background_white.png?width=1040&height=416)
+
 ## ![](https://media.discordapp.net/attachments/651877464234131476/651877501961895956/icon.png?width=20&height=20) WELCOME TO YOU
 
 #### Embeder | Presentation
