@@ -42,11 +42,15 @@ function load() {
 
 function timer() {
   update_client();
-  setTimeout("timer()", 1000);
+  setTimeout("timer()", 500);
 };
 
 function invite() {
   shell.openExternal(`https://discordapp.com/oauth2/authorize?client_id=${document.getElementById("id").value}&scope=bot&permissions=8`, "_blank");
+}
+
+function video() {
+  shell.openExternal("https://www.youtube.com/channel/UC_vy9BbaVhKjtfkGxA0EWng");
 }
 
 function login() {
@@ -216,7 +220,7 @@ function update_client() {
   } else {
     document.getElementById("author").classList.remove("void");
   }
-  if (document.getElementById("author_u").value == "") {
+  if (document.getElementById("author_link_input").value == "") {
     document.getElementById("author_u").classList.remove("url");
   } else {
     document.getElementById("author_u").classList.add("url");
