@@ -124,6 +124,21 @@ function reset() {
   console.log("Client reset!")
 };
 
+function hover(x, txt) {
+  bull.classList.remove("void");
+  const element = document.getElementById(x).getBoundingClientRect();
+  bull = document.getElementById("bull");
+  bull.innerHTML = txt;
+  document.getElementById("left").insertBefore(bull, document.getElementById("left").lastChild);
+  bull.style.top = String(element.top - bull.getBoundingClientRect().height - 10) + "px";
+  bull.style.left = String((element.left + (element.width/2)) - (bull.getBoundingClientRect().width/2)) + "px";
+  bull.style.animation = "bull .175s"
+};
+
+function unhover() {
+  document.getElementById("bull").classList.add("void");
+};
+
 function createField() {
   z += 1
   u += 1
@@ -140,6 +155,10 @@ function createField() {
   textarea_value.innerHTML = "Another field value";
   textarea_field.setAttribute("id", "field_title" + z);
   textarea_value.setAttribute("id", "field_value" + z);
+  textarea_field.setAttribute("onmouseout", "unhover();");
+  textarea_value.setAttribute("onmouseout", "unhover();");
+  textarea_field.setAttribute("onmouseover", "hover(\"field_title" + z + "\", \"field title #" + z + "\");");
+  textarea_value.setAttribute("onmouseover", "hover(\"field_value" + z + "\", \"field value #" + z + "\");");
   //INSERT FIELD
   block1.insertBefore(textarea_value, block1.lastChild);
   block2.insertBefore(textarea_field, block2.lastChild);

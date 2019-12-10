@@ -320,6 +320,43 @@ h3 {
   color: var(--blue);
 }
 
+#bull {
+  position: absolute;
+  background: black;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin: 0;
+  box-shadow: 0px 8px 20px rgba(0,0,0,0.25);
+  font-size: 12px;
+}
+
+#bull::after {
+  content: "";
+  position: absolute;
+  bottom: -7px;
+  left: 50%;
+  margin-left: -8px;
+  border-top: 8px solid black;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 0;
+  box-shadow: 0px 8px 20px rgba(0,0,0,0.25);
+  transition: all .075s;
+}
+
+
+@keyframes bull {
+  50% {
+    transform: scale(1.025);
+  }
+  100% {
+    transform: none;
+  }
+}
+
 /* -------  input -------*/
 input, textarea {
   margin-right: 5px;
@@ -480,7 +517,7 @@ select {
   width: 76%;
 }
 
-#right #embed #content .void {
+#right #embed #content .void, #left .void {
   display: none;
 }
 
