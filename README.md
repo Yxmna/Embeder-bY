@@ -18,10 +18,10 @@ It works with your own bot without the need to code anything
 
 #### Install & run with executable
 
-- [Download zip here](http://yomna.yn.fr/tool/embeder_by_beta1.zip)
+- [Download zip here](http://yomna.yn.fr/tool/Embeder_bY-win32-x64.zip)
 - Extract file
 - Run embeder_by.exe
 
  ## HOW IT WORKS
  
- - [Demo video here](http://") (soon)
+ - [Demo video here](https://youtu.be/iiHpM6wg8Do)
