@@ -8,7 +8,7 @@ Embeder-bY is a visual tool that allows you to easily create and send embed for 
 It works with your own bot without the need to code anything
 
  ## INSTALLATION
- 
+
 #### Install & run with code source
 
 - `git clone https://github.com/Yxmna/Embeder-bY.git`
@@ -23,5 +23,5 @@ It works with your own bot without the need to code anything
 - Run embeder_by.exe
 
  ## HOW IT WORKS
- 
+
  - [Demo video here](https://youtu.be/iiHpM6wg8Do)
