@@ -18,7 +18,7 @@ It works with your own bot without the need to code anything
 
 #### Install & run with executable
 
-- [Download zip here](https://yxmna.github.io/softwares/Embeder_bY-win32-x64.zip)
+- [Download zip here](http://yxmna.github.io/softwares/Embeder_bY-win32-x64.zip)
 - Extract file
 - Run embeder_by.exe
 
